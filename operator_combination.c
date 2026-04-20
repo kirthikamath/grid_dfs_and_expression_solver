@@ -21,12 +21,12 @@ int main()
         //removing trailing newline from input line
         line[strcspn(line,"\n")]=0;
         line[strcspn(line,"\r")]=0;
-        
+        //parsing the targets and the operands
         char *l1=strtok(line,":");
         char *l2=strtok(NULL,":");
         
         printf("Target: %s\n",l1);
-        int target=atoi(l1);//converting from string to integer
+        int target=atoi(l1); //converting from string to integer
         
         char *token=strtok(l2," ");
         int num[100];
