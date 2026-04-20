@@ -3,6 +3,7 @@
 
 void dfs(int i, int j,int r, int c, int grid[100][100], int visited9[100][100], int*count)
 {
+    //If current cell is 9, count it(only once)
     if(grid[i][j] == 9)
     {
         if(visited9[i][j] == 0)
@@ -56,6 +57,7 @@ int main()
         printf("\n");
         
     }
+    //Traverse grid to find all trailheads (cells with value 0)
     for(int i=0;i<r;i++)
     {
         for(int j=0;j<c;j++)
